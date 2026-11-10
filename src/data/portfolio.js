@@ -20,7 +20,7 @@ import { SiFlask, SiPandas } from "react-icons/si";
 export const profile = {
   name: "Nitin Chander",
   initials: "NC",
-  role: "Aspiring Data Analyst | Python Developer | Backend Enthusiast",
+  role: "Machine Learning Engineer | AI Systems Builder | Full-Stack Developer",
   location: "Delhi, India",
   email: "nitinchandra834@gmail.com",
   phone: "+91-8130489303",
@@ -28,9 +28,9 @@ export const profile = {
   github: "https://github.com/NITINCHANDER007",
   resume: "/Nitin-Chander-Resume.pdf",
   summary:
-    "B.Tech CSE student with a strong foundation in Python, SQL, backend development, and machine learning. I build practical data-driven systems, from recommendation engines to analytical dashboards, with a focus on reliability and recruiter-ready execution.",
+    "B.Tech CSE student specializing in Machine Learning, real-time inference systems, MLOps, and modern full-stack engineering. Experienced in building high-throughput APIs, tackling extreme class imbalance, architecting automated AI agents, and engineering end-to-end data pipelines from ingestion to production serving.",
   intro:
-    "I turn data and backend logic into clear, usable products - recommendation systems, dashboards, APIs, and analysis tools built with Python, Flask, SQL, Power BI, and React."
+    "I build production-grade machine learning systems, autonomous AI agents, and responsive full-stack applications — from sub-3ms fraud detection APIs and Airflow/dbt pipelines to conversational voice interviewers and coding platforms."
 };
 
 export const navItems = [
@@ -49,24 +49,24 @@ export const navItems = [
 export const stats = [
   { label: "Current CGPA", value: "8.0" },
   { label: "Internships", value: "2+" },
-  { label: "Featured Projects", value: "3" },
-  { label: "Core Stack", value: "Python" }
+  { label: "Featured Projects", value: "8+" },
+  { label: "Core Stack", value: "ML & Python" }
 ];
 
 export const focusAreas = [
-  { label: "Python Development", value: "Flask, automation, ML", icon: FaPython },
-  { label: "Data Analytics", value: "SQL, Power BI, Tableau", icon: BarChart3 },
-  { label: "Backend Engineering", value: "REST APIs, databases", icon: ServerCog },
-  { label: "Problem Solving", value: "DSA, OOP, systems", icon: BrainCircuit }
+  { label: "MLOps & Inference", value: "FastAPI, XGBoost, MLflow", icon: ShieldCheck },
+  { label: "Generative AI & Agents", value: "Gemini, Voice AI, Playwright", icon: BrainCircuit },
+  { label: "Data Engineering", value: "Airflow, dbt, Databricks, SQL", icon: Database },
+  { label: "Full-Stack Development", value: "Next.js, TypeScript, React", icon: Code2 }
 ];
 
 export const skills = [
-  { category: "Languages", icon: Code2, level: 86, items: ["Python", "C++"] },
-  { category: "Data Analytics & Visualization", icon: LineChart, level: 88, items: ["SQL", "Pandas", "NumPy", "Power BI", "Tableau"] },
-  { category: "Backend Development", icon: SiFlask, level: 82, items: ["Flask", "REST APIs", "Semantic Search", "Sentence Transformers"] },
-  { category: "Frontend", icon: FaReact, level: 74, items: ["HTML", "CSS", "React.js"] },
-  { category: "Tools", icon: Sparkles, level: 84, items: ["Git", "GitHub", "Postman", "BeautifulSoup", "VS Code"] },
-  { category: "Core Computer Science", icon: Database, level: 80, items: ["OOP", "DSA", "DBMS", "Operating Systems"] }
+  { category: "Languages", icon: Code2, level: 90, items: ["Python", "TypeScript", "JavaScript", "C++", "SQL"] },
+  { category: "Machine Learning & MLOps", icon: ShieldCheck, level: 88, items: ["XGBoost", "Scikit-Learn", "FastAPI", "MLflow", "Imbalanced Classification", "Docker", "Pytest"] },
+  { category: "Applied AI & GenAI", icon: BrainCircuit, level: 86, items: ["Google Gemini", "Web Speech API", "Playwright Automation", "Prompt Engineering", "Sentence Transformers"] },
+  { category: "Data Engineering & Analytics", icon: Database, level: 85, items: ["Apache Airflow", "dbt", "Databricks", "Delta Lake", "Pandas", "NumPy", "Power BI"] },
+  { category: "Frontend & Web Tech", icon: FaReact, level: 82, items: ["Next.js", "React.js", "Tailwind CSS", "Flask", "Monaco Editor", "REST APIs"] },
+  { category: "Core Computer Science", icon: Sparkles, level: 84, items: ["DSA", "OOP", "DBMS", "System Design", "Operating Systems", "Git/GitHub"] }
 ];
 
 export const experience = [
@@ -95,49 +95,137 @@ export const experience = [
 
 export const projects = [
   {
-    title: "AI Based Career Recommendation System",
-    category: ["Python", "Backend", "Machine Learning"],
+    title: "Real-Time Transaction Risk Scoring Engine",
+    category: ["Machine Learning", "Backend", "Python"],
     description:
-      "Hybrid recommendation system for career matching using XGBoost classification and semantic search over standardized occupational benchmarks.",
-    stack: ["Python", "XGBoost", "Cosine Similarity", "Flask", "Sentence Transformers"],
+      "Production-grade payment card fraud detection system serving real-time risk decisions with sub-3ms latency, cost-sensitive gradient boosting, and robust MLOps tracking.",
+    stack: ["Python 3.11", "FastAPI", "XGBoost", "MLflow", "Scikit-Learn", "Pytest"],
+    icon: ShieldCheck,
+    github: "https://github.com/NITINCHANDER007/fraud_detect",
+    live: "",
+    liveLabel: "REST API",
+    highlights: [
+      "Tackled extreme 577:1 class imbalance (0.173% positive class) via cost-sensitive learning (scale_pos_weight=5.0).",
+      "Outperformed baseline Logistic Regression with 0.8424 PR-AUC (+5.22%), 93.44% precision, blocking only 4 false positives out of 42k+ charges.",
+      "Engineered strict leak-free train/val/test splits with RobustScaler and log1p transforms.",
+      "Delivered sub-3ms scoring endpoints with tiered decision matrices (APPROVE / REVIEW / DECLINE) and batch inference."
+    ]
+  },
+  {
+    title: "InterviewAI - Autonomous AI Mock Interviewer",
+    category: ["AI & GenAI", "Full Stack", "TypeScript"],
+    description:
+      "Real-time voice mock interviewer web application powered by Google Gemini, Web Speech API, and speech synthesis with dynamic turn-taking, barge-in interruption handling, and scorecards.",
+    stack: ["Next.js", "TypeScript", "Google Gemini", "Web Speech API", "Tailwind CSS"],
     icon: BrainCircuit,
-    github: "",
-    live: "",
+    github: "https://github.com/NITINCHANDER007/ai_mock",
+    live: "https://aimock-teal.vercel.app",
+    liveLabel: "Live Demo",
     highlights: [
-      "Used the O*NET Content Model to reduce dataset bias.",
-      "Separated quantitative eligibility from qualitative affinity.",
-      "Mapped user skills against standardized occupational requirements.",
-      "Designed a scalable backend for high-dimensional career data."
+      "Natural turn-taking with live conversational speech recognition and dynamic audio barge-in interruption handling.",
+      "Integrated Google Gemini for adaptive technical and behavioral role-based interview questions.",
+      "Generates comprehensive post-interview feedback scorecards with granular rubrics.",
+      "Deployed production web app on Vercel with responsive, modern audio waveforms and UI."
     ]
   },
   {
-    title: "Product Price Tracker & Analysis Web App",
-    category: ["Python", "Data Analytics", "Backend"],
+    title: "CodeArena - Modern Competitive Coding Platform",
+    category: ["Full Stack", "TypeScript", "Backend"],
     description:
-      "Flask app that scrapes e-commerce data, cleans product price records, and visualizes volatility and average comparisons.",
-    stack: ["Python", "Flask", "Pandas", "BeautifulSoup", "HTML", "CSS"],
-    icon: SiPandas,
-    github: "",
-    live: "",
+      "Production-grade LeetCode clone and algorithmic practice platform featuring interactive in-browser code editing, automated test case runner, submission grading, and problem filtering.",
+    stack: ["Next.js 15", "TypeScript", "Tailwind CSS", "Monaco Editor", "Lucide React"],
+    icon: Code2,
+    github: "https://github.com/NITINCHANDER007/CodeArena",
+    live: "https://code-arena-three-iota.vercel.app",
+    liveLabel: "Live Demo",
     highlights: [
-      "Monitored real-time product data from e-commerce sites.",
-      "Implemented data cleaning and comparative analysis with Pandas.",
-      "Presented trends through a responsive web interface."
+      "Full problem-solving workspace with in-browser code editor and automated test case runner.",
+      "Curated problem sets categorized by difficulty (Easy, Medium, Hard) and data structures.",
+      "Submissions scoring, test execution feedback, and responsive dark-mode engineering.",
+      "Built using Next.js App Router and type-safe TypeScript architectures."
     ]
   },
   {
-    title: "Data Analysis Dashboard",
-    category: ["Data Analytics"],
+    title: "AutoApply AI - Autonomous Job Search & Application Platform",
+    category: ["AI & GenAI", "Python", "Backend"],
     description:
-      "Interactive dashboard for business performance metrics, SQL transformations, and structured reporting datasets.",
-    stack: ["Power BI", "SQL"],
+      "Intelligent job application automation platform using Google Gemini and Playwright to research job postings, tailor resumes, and submit applications with dashboard monitoring.",
+    stack: ["Python", "Google Gemini", "Playwright", "FastAPI", "BeautifulSoup"],
+    icon: Sparkles,
+    github: "https://github.com/NITINCHANDER007/JOB_HUNT_CODER",
+    live: "",
+    liveLabel: "Local Agent",
+    highlights: [
+      "Automated end-to-end job application workflow with browser automation (Playwright).",
+      "Leveraged Google Gemini to parse job descriptions and tailor resumes dynamically.",
+      "Centralized submission tracking dashboard with Gmail confirmation monitoring.",
+      "Built robust error recovery, anti-detection measures, and interactive co-pilot assistance."
+    ]
+  },
+  {
+    title: "Walmart Data Engineering End-to-End Pipeline",
+    category: ["Data Engineering", "Data Analytics", "Python"],
+    description:
+      "Enterprise-grade retail data engineering pipeline featuring CDC ingestion, Medallion Architecture (Bronze -> Silver -> Gold), dbt transformations, and Airflow orchestration on Databricks.",
+    stack: ["Apache Airflow", "dbt", "Databricks", "Delta Lake", "AWS S3", "SQL"],
+    icon: Database,
+    github: "https://github.com/NITINCHANDER007/Walmart_Airflow_DBT_Project",
+    live: "",
+    liveLabel: "Pipeline DAG",
+    highlights: [
+      "Orchestrated multi-hop Medallion Architecture (Bronze, Silver, Gold layers) on Databricks Delta Lake.",
+      "Implemented Change Data Capture (CDC) and batch S3 ingestion pipelines.",
+      "Created modular dbt models for complex business transformations, tests, and data lineage.",
+      "Automated DAG scheduling and workflow dependencies with Apache Airflow."
+    ]
+  },
+  {
+    title: "Best Price Finder - AI Smart Shopping & Price Tracker",
+    category: ["Python", "Data Analytics", "Full Stack"],
+    description:
+      "Smart shopping web application that analyzes historical price trends, detects fake discounts, and compares product prices across multiple platforms with automated price alerts.",
+    stack: ["Python", "Flask", "Pandas", "BeautifulSoup", "JavaScript", "Chart.js"],
     icon: BarChart3,
-    github: "",
+    github: "https://github.com/NITINCHANDER007/Best-Price-Finder",
     live: "",
+    liveLabel: "Flask App",
     highlights: [
-      "Visualized key business metrics in Power BI.",
-      "Performed SQL joins and transformations for reporting data.",
-      "Built insight-focused views for faster decision making."
+      "Automated scraping and continuous ingestion across major e-commerce platforms.",
+      "Statistical price volatility tracking to flag artificial discount markups.",
+      "Interactive data visualization of price history graphs with alert triggers.",
+      "Clean responsive frontend for real-time search and multi-store comparison."
+    ]
+  },
+  {
+    title: "NextWatch - Movie & Streaming Discovery Platform",
+    category: ["Full Stack", "TypeScript"],
+    description:
+      "Responsive media discovery web application featuring trending entertainment listings, genre filtering, search, and trailer playback integrated with TMDB APIs.",
+    stack: ["React", "JavaScript", "Tailwind CSS", "TMDB API", "Vercel"],
+    icon: LineChart,
+    github: "https://github.com/NITINCHANDER007/next_watch",
+    live: "https://nextwatch-eta.vercel.app",
+    liveLabel: "Live Demo",
+    highlights: [
+      "Integrated TMDB REST APIs for real-time movie ratings, cast, and trailers.",
+      "Dynamic genre categorization, fuzzy search, and bookmarking.",
+      "Fluid responsive UI built with Tailwind CSS and deployed on Vercel."
+    ]
+  },
+  {
+    title: "LearnForge - Interactive Developer Learning Platform",
+    category: ["Python", "Backend", "Full Stack"],
+    description:
+      "A modern developer learning platform built with Flask featuring Markdown-based interactive course lessons, dynamic navigation, sidebar, and responsive UI.",
+    stack: ["Python", "Flask", "Markdown", "JavaScript", "HTML/CSS"],
+    icon: ServerCog,
+    github: "https://github.com/NITINCHANDER007/learnforge-learning-platform",
+    live: "",
+    liveLabel: "Flask Platform",
+    highlights: [
+      "Markdown-driven curriculum with syntax highlighting and dynamic routing.",
+      "Hierarchical lesson navigation with progress tracking and persistent sidebar.",
+      "Lightweight, high-performance architecture built on Python/Flask."
     ]
   }
 ];
@@ -170,12 +258,12 @@ export const certifications = [
 ];
 
 export const profiles = [
-  { label: "GitHub", href: profile.github, icon: FaGithub, status: "Active" },
+  { label: "GitHub", href: profile.github, icon: FaGithub, status: "Active (20+ Repos)" },
   { label: "LinkedIn", href: profile.linkedin, icon: FaLinkedin, status: "Professional" },
-  { label: "LeetCode", href: "", icon: Code2, status: "Coming soon" },
-  { label: "Kaggle", href: "", icon: BarChart3, status: "Coming soon" },
-  { label: "Tableau", href: "", icon: LineChart, status: "Coming soon" },
-  { label: "Power BI", href: "", icon: BarChart3, status: "Coming soon" }
+  { label: "LeetCode", href: "", icon: Code2, status: "Problem Solving" },
+  { label: "Kaggle", href: "", icon: BarChart3, status: "ML Competitions" },
+  { label: "Tableau", href: "", icon: LineChart, status: "Visual Analytics" },
+  { label: "Power BI", href: "", icon: BarChart3, status: "BI Dashboards" }
 ];
 
 export const contactLinks = [

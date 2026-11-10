@@ -12,7 +12,7 @@ export default function Resume() {
             <div>
               <h3 className="text-2xl font-black text-white">Nitin-Chander-Resume.pdf</h3>
               <p className="mt-2 max-w-2xl leading-7 text-slate-400">
-                Resume includes education, technical skills, backend internships, Python projects, Power BI dashboard work, and contact details.
+                Resume includes education, machine learning systems, data engineering pipelines, backend internships, full-stack projects, and verified benchmarks.
               </p>
               <div className="mt-4 flex flex-wrap gap-2">
                 <span className="tag"><Sparkles size={14} />Placement-ready</span>

@@ -10,7 +10,7 @@ export default function About() {
         <div className="glass rounded-3xl p-6 sm:p-8">
           <p className="text-lg leading-8 text-slate-300">{profile.summary}</p>
           <p className="mt-5 leading-8 text-slate-400">
-            My work combines backend APIs, data preparation, analytics, and clean interfaces. I am especially interested in products where strong engineering makes data easier to trust, explore, and act on.
+            My work combines machine learning, real-time inference APIs, data engineering, and modern full-stack web applications. I focus on building resilient systems that handle complex data, high concurrency, and strict production SLAs.
           </p>
         </div>
         <motion.div variants={stagger} initial="hidden" whileInView="show" viewport={{ once: true }} className="grid gap-4 sm:grid-cols-2 lg:grid-cols-1">
